@@ -1,5 +1,5 @@
 ## Electric Vehicle SQL Analysis
-![](images/ev_icon.PNG)
+![](images/ev_icon.png)
 
 ### Project Overview 
 This project explores electric vehicle (EV) dataset using SQL to gain insights into electric vehicle distribution, pricing, and characteristics across various dimensions like city, county, and state.
