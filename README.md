@@ -1,5 +1,5 @@
 ## Electric Vehicle SQL Analysis
-![]()
+![](images/)
 ### Project Overview 
 
 ## Objectives
@@ -32,7 +32,7 @@ compute the percentage of CAFV-eligible vehicles for each state.
 ## About the Data
 The dataset contains information about population of electric vehicle in the United States of America includig details like vehicle characteristics, pricing and various dimensions.
 
-![]()
+![](images/ev_dataset_overview.PNG)
 
 Nubmer of entries - 194232
 
