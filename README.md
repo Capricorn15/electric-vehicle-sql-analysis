@@ -32,7 +32,7 @@ compute the percentage of CAFV-eligible vehicles for each state.
 ## About the Data
 The dataset contains information about population of electric vehicle in the United States of America includig details like vehicle characteristics, pricing and various dimensions.
 
-![](EV SQL Analysis/images/ev_dataset_overview.PNG)
+![](images/ev_dataset_overview.PNG)
 
 Nubmer of entries - 194232
 
@@ -85,7 +85,7 @@ from ev_sales_table
 group by state
 ```
 
-![]()
+![](images/ev_output_1a.PNG)
 
 Total number of electric vehicles for  each county.
 ```
@@ -94,7 +94,7 @@ from ev_sales_table
 group by county
 order by Total_no_of_ev desc
 ```
-![]()
+![](images/ev_output_1b.PNG)
 
 All electric vehicles located in the city of Seattle
 ```
@@ -102,7 +102,7 @@ select count(*) as Total_no_of_ev
 from ev_sales_table
 where city = 'Seattle'
 ```
-![]()
+![](images/ev_output_1c.PNG)
 
 **MSRP Comparison:**
 
@@ -112,7 +112,7 @@ select "VIN (1-10)", base_msr
 from ev_sales_table
 where base_msr > (select avg(base_msr) from ev_sales_table)
 ```
-![]()
+![](images/msrp_comparison_output.PNG)
 
 **Plug-in Hybrid Analysis**
 
@@ -123,7 +123,7 @@ from ev_sales_table
 where county = 'King' and electric_vehicle_type = 'Plug-in Hybrid Electric Vehicle (PHEV)'
 and electric_range > 50 
 ```
-![]()
+![](images/plugin_hybrid_output.PNG)
 
 **High-Concentration Cities**
 
@@ -134,7 +134,7 @@ from ev_sales_table
 group by city
 having count(*) > 100
 ```
-![]()
+![](images/high_conc_output.PNG)
 
 **Long-Range Vehicles by County**
 
@@ -147,7 +147,7 @@ where county in
 	group by county
 	having avg(electric_range) > 150)
 ```
-![]()
+![](images/low_range_vehicle_output.PNG)
 
 **Vehicle Categorization according to Base MSRP**
 
@@ -163,7 +163,7 @@ select
 from ev_sales_table
 group by ev_cost_category
 ```
-![]()
+![](images/vehicle_category_output.PNG)
 
 **Electric Range Ranking**
 
@@ -173,7 +173,7 @@ select county, make, model, electric_range,
 rank () over (partition by county order by electric_range desc) as rank_within_county
 from ev_sales_table
 ```
-![]()
+![](images/electric_range_rank_output.PNG)
 
 **Clean Alternative Fuel Vehicle (CAFV) Analysis with CTEs**
 
@@ -191,7 +191,7 @@ with vehicle_count as (
 select *, (total_no_cafv::float /total_no_ev)*100 as perc_of_cafv
 from vehicle_count
 ```
-![]()
+![](images/cafv_output.PNG)
 
 ### Data Visualization
 
