@@ -1,6 +1,10 @@
 ## Electric Vehicle SQL Analysis
-![](images/)
+![](images/ev_icon.PNG)
+
 ### Project Overview 
+This project explores electric vehicle (EV) dataset using SQL to gain insights into electric vehicle distribution, pricing, and characteristics across various dimensions like city, county, and state.
+
+By leveraging SQL queries on a structured EV dataset, the project simulates real-world data analytics work often performed in mobility, transportation, or e-commerce companies interested in sustainable vehicle markets.
 
 ## Objectives
 ### EV Distribution:
@@ -30,7 +34,7 @@
 compute the percentage of CAFV-eligible vehicles for each state.
 
 ## About the Data
-The dataset contains information about population of electric vehicle in the United States of America includig details like vehicle characteristics, pricing and various dimensions.
+The dataset stored in a csv file contains information about population of electric vehicle in the United States of America including details like vehicle characteristics, pricing and various dimensions.
 
 ![](images/ev_dataset_overview.PNG)
 
@@ -67,11 +71,11 @@ base_msr -
 electric_utility - 
 
 ### Tools
-- PostgreSQL
+- **PostgreSQL** -  for querying and data manipulation
 
-- pgAdmin 4 for PostgresSQL
+- **pgAdmin 4** - for exploring schema and executing SQL scripts
 
-- Power Bi for visualization
+- **Power Bi** -  for visualization
 
 ## Data Cleaning
 
