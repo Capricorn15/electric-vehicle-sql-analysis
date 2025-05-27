@@ -44,31 +44,31 @@ Number of columns - 13
 
 **Columns used for the analysis**
 
-VIN - 
+**VIN** - contains Vehicle Identification Number for each electric vehicle record
 
-county -
+**county** - consists of the county names
 
-city -
+**city** - consists of the city names
 
-state -
+**state** - consists of the state
 
-postal_code -
+**postal_code** - consists of postal code information
 
-model_year -
+**model_year** - consists of the year for electric vehicle models
 
-make -
+**make** - consists of different makes of electric vehicle
 
-model -
+**model** - consists of different models of electric vehicle
 
-electric_vehicle_type -
+**electric_vehicle_type** - contains  the different types of electric vehicle
 
-clean_alternative_fuel_vehicle_CAFV -
+**clean_alternative_fuel_vehicle_CAFV** - contains the eligibility of electric vehicles with clean alternative fuel
 
-electric_range -
+**electric_range** - contains the electric range recorded for the vehicles
 
-base_msr -
+**base_msr** - contains (base_msr) Base Manufacturer’s Suggested Retail price 
 
-electric_utility - 
+**electric_utility** - consists of companies offering electric utility services
 
 ### Tools
 - **PostgreSQL** -  for querying and data manipulation
@@ -77,7 +77,6 @@ electric_utility -
 
 - **Power Bi** -  for visualization
 
-## Data Cleaning
 
 ### Queries
 **EV Distribution:**
@@ -116,7 +115,7 @@ select "VIN (1-10)", base_msr
 from ev_sales_table
 where base_msr > (select avg(base_msr) from ev_sales_table)
 ```
-![](images/msrp_comparison_output.PNG)
+![](images/msrp_comparison_ouput.PNG)
 
 **Plug-in Hybrid Analysis**
 
