@@ -209,5 +209,24 @@ from vehicle_count
 
 ![EV Dashboard Page 3](images/ev-pg3.PNG)
 
+## 🔍 Key Insights
 
-## Findings
+- **Total EVs Analyzed**: 194,232 vehicles across 42 unique makes.
+- **EV Type Catgeory**: 
+  - Battery Electric Vehicles (BEV): 78.35%
+  - Plug-in Hybrid Electric Vehicles (PHEV): 21.65%
+- **EV MSRP Distribution**: 
+  - Affordable EVs: 98.76%
+  - Expensive EVs: 1.24%
+- **Average MSRP**: $978.73 | **Average Electric Range**: 54.84 units
+- **Top Cities for EV Ownership**: Seattle, Bellevue, Redmond, Vancouver (Washington State dominates EV adoption)
+- **High-End Makes by MSRP**: FISKER, MINI, VOLVO lead premium pricing
+- **Tesla Models** top the electric range rankings, with strong presence in Yuba and York counties
+- **Audi** appears most frequently among high-range EVs, showing model consistency
+
+## Conclusion
+
+The analysis reveals strong EV adoption in the Pacific Northwest, with Battery EVs dominating the market. Most EVs remain in the affordable segment, suggesting price competitiveness. Tesla and Audi emerge as leaders in electric range ranking, while brands like Fisker and Volvo top premium pricing.
+
+
+
