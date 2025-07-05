@@ -196,7 +196,18 @@ from vehicle_count
 ```
 ![](images/cafv_output.PNG)
 
-### Data Visualization
+## Data Visualization
+### 🖥 Page 1: Overview
+
+![EV Dashboard Page 1](images/ev-pg1.PNG)
+
+### 📈 Page 2: Range & Price Analysis
+
+![EV Dashboard Page 2](images/ev-pg2.PNG)
+
+### 📈 Page 3 : CAFV Analysis
+
+![EV Dashboard Page 3](images/ev-pg3.PNG)
 
 
 ## Findings
